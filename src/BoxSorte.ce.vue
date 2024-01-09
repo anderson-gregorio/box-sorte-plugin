@@ -4,7 +4,7 @@
       <img alt="Box da Sorte" src="https://gamecomm.s3.amazonaws.com/Upload/1/favicon.png" />
     </div>
 
-    <ModalSorteio v-model:show="showModal" />
+    <ModalSorteio v-model:show="showModal" :value="value" />
   </div>
 </template>
 
@@ -13,7 +13,8 @@ import ModalSorteio from './ModalSorteio.vue'
 
 export default {
   props: {
-    show: Boolean
+    show: Boolean,
+    value: String
   },
   data() {
     return {
