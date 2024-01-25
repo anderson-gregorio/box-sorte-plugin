@@ -10,7 +10,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "testWebComponent": "npm run build && node testWebComponent.js && npx http-server ./testWebComponent -c1 -o"
   },
   "dependencies": {
     "vue": "^3.3.11"

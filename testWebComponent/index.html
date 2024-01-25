@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+
+  <script src="box-sorte-plugin.js"></script>
+  <script>
+    function teste() {
+      const text = document.getElementById("value");
+
+      const plugin = document.querySelector('box-sorte-plugin');
+      plugin.setAttribute('value', text.value);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Teste em HTML</h1>
+
+  <div>
+    <textarea id="value" cols="30" rows="10">{"nome": "Anderson", "cep": "30160042"}</textarea>
+    <button onclick="teste()">Repassa Value 'Plugin'</button>
+  </div>
+
+  <box-sorte-plugin show value='{"nome": "Anderson", "cep": "30160042"}'></box-sorte-plugin>
+</body>
+
+</html>
