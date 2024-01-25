@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="theme">
     <div class="fab-wrapper cursor" v-if="show" role="button" @click="showPopup()">
       <img alt="Box da Sorte" src="https://gamecomm.s3.amazonaws.com/Upload/1/favicon.png" />
     </div>
@@ -14,7 +14,8 @@ import ModalSorteio from './ModalSorteio.vue'
 export default {
   props: {
     show: Boolean,
-    value: String
+    value: String,
+    theme: String
   },
   data() {
     return {
