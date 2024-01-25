@@ -8,6 +8,7 @@
       <div class="modal-body">
         <div class="content">
           <img
+            class="img-loading"
             v-if="loading"
             alt="Loading"
             src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif"
@@ -79,9 +80,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-img {
-  height: 48px;
-}
-</style>
